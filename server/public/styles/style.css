@@ -32,7 +32,9 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1.4; }
+  line-height: 1.4;
+  background: beige;
+   }
 
 ol, ul {
   list-style: none; }
@@ -68,15 +70,46 @@ img, iframe, video, object {
   max-width: 100%; }
 
 
-/****************
-global
-****************/
+
 
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
   width: 90%; }
 
+/***************
+Modular Styles
+***************/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.bold {
+  font-weight: bold; }
+
+.hidden,
+.hide {
+  display: none; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.text-centered {
+  text-align: center; }
 
 
 /****************
@@ -100,6 +133,7 @@ nav figure {
   top: -10px;
   left: 50px;
 }
+
 
 .primary-nav {
     float: right;
@@ -134,6 +168,33 @@ nav li a.active,
 nav li a:focus {
     background-color: #eb2428;
     color: #fff;
+}
+
+/****************
+nav drop-down
+****************/
+
+.has-submenu ul {
+
+background: #fff;
+position: absolute;
+top: 70px;
+border-bottom: 1px solid #ada791;
+border-left:  1px solid #ada791;
+border-right : 1px solid #ada791;
+width: 150px;
+border-radius: 0 0 15px 15px;
+overflow: hidden;
+display: none;
+}
+
+.has-submenu:hover ul {
+  display: block;
+}
+
+.has-submenu a {
+  display: block;
+  padding: 20px 0;
 }
 
 /****************
