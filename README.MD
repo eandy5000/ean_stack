@@ -5,6 +5,8 @@ context of an Angular app.
 
 ## Deployment 
 
-The most current deployment of the app uses Now.js
+The most current deployment of the app uses 
+[ Now.js](https://ean-stack-jhblamglmh.now.sh)
+
 
 
