@@ -253,6 +253,21 @@ buttons
  text-align: center;
  font-weight: bold;
  letter-spacing: 1.5px;
+ transition: .25s all linear;
+ -webkit-transition: .25s all linear;
+}
+.button:hover,
+.button:focus {
+  background: #333;
+  color: #fff;
+}
+
+.button-narrow {
+  width: 25%;
+}
+.button-alt {
+  border-color: #fff;
+  color: #fff;
 }
 
 /****************
